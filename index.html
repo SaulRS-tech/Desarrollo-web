@@ -9,26 +9,26 @@
 </head>
 <body>
     <header class="bg-dark text-white py-4 mb-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <h1>Examen Parcial 1: Sitio Web Informativo</h1>
-                <p class="lead">Materia: DESARROLLO WEB</p>
-                <hr class="bg-light">
-                <ul class="list-unstyled">
-                    <li><strong>Desarrollador:</strong> Saúl Ramírez Saavedra</li>
-                    <li><strong>Carrera:</strong> Licenciatura en Informática y Tecnologías Computacionales</li>
-                    <li><strong>Semestre/Gpo:</strong> 6to</li>
-                </ul>
-            </div>
-            <div class="col-md-4 text-md-end">
-                <p><strong>Docente:</strong> Margarita Mondragón Arellano</p>
-                <p><strong>Fecha de Entrega:</strong> 4-mar-2026</p>
-                <span class="badge bg-primary px-3 py-2">Unidad II</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>Examen Parcial 1: Sitio Web Informativo</h1>
+                    <p class="lead">Materia: DESARROLLO WEB</p>
+                    <hr class="bg-light">
+                    <ul class="list-unstyled">
+                        <li><strong>Desarrollador:</strong> Saúl Ramírez Saavedra</li>
+                        <li><strong>Carrera:</strong> Licenciatura en Informática y Tecnologías Computacionales</li>
+                        <li><strong>Semestre/Gpo:</strong> 6to</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p><strong>Docente:</strong> Margarita Mondragón Arellano</p>
+                    <p><strong>Fecha de Entrega:</strong> 4-mar-2026</p>
+                    <span class="badge bg-primary px-3 py-2">Unidad II</span>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -39,170 +39,73 @@
     <div class="container mt-5">
         <section id="apis">
             <h2>Tecnologías de Web APIs</h2>
-            <p>Definición: Mecanismos que permiten a dos componentes de software comunicarse
-                entre sí mediante un conjunto de definiciones y protocolos.</p>
-            <h3> ¿Qué es un API?</h3>
-            <p>Una API es un mensajero o puente tecnológico que permite que dos aplicaciones de software se comuniquen y 
-            compartan datos entre sí. Funciona mediante un ciclo de petición y respuesta, donde un cliente solicita información 
-            y el servidor la entrega a través de un protocolo seguro. Es fundamental en el desarrollo web porque permite integrar 
-            servicios externos</p>
-            <h3> HTTP</h3>
-            <p>HTTP por sus siglas en inglés significa: HyperText Transfer Protocol. Los códigos de estado son respuestas numéricas
-              del servidor que indican si una petición HTTP se completó correctamente o si hubo un error. 
-            Son fundamentales para el diagnóstico en el desarrollo de APIs.</p>
+            <p>Definición: Mecanismos que permiten a dos componentes de software comunicarse entre sí mediante un conjunto de definiciones y protocolos.</p>
+            <h3>¿Qué es un API?</h3>
+            <p>Una API es un mensajero o puente tecnológico que permite que dos aplicaciones de software se comuniquen.</p>
+            
             <h3>HTTP Extra: Códigos de Estado</h3>
-          <ul>
-              <li><strong>200 OK:</strong> La petición fue exitosa y el servidor entregó los datos.</li>
-              <li><strong>201 Created:</strong> Se ha creado un nuevo recurso con éxito.</li>
-              <li><strong>400 Bad Request:</strong> Error de sintaxis en la petición del cliente.</li>
-              <li><strong>404 Not Found:</strong> El servidor no pudo encontrar el recurso solicitado.</li>
-              <li><strong>500 Internal Server Error:</strong> Error inesperado en el servidor.</li>
-        </ul>
-                <img src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png" 
-      alt="Diagrama de API" 
-      style="max-width: 200px;" 
-      class="img-fluid my-3">
+            <ul>
+                <li><strong>200 OK:</strong> Éxito.</li>
+                <li><strong>404 Not Found:</strong> No encontrado.</li>
+                <li><strong>500 Error:</strong> Fallo del servidor.</li>
+            </ul>
+            <img src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png" alt="Diagrama de API" class="img-fluid my-3 img-api">
         </section>
 
         <section id="microservicios">
             <h2>Microservicios</h2>
-            <p>Los microservicios son un enfoque arquitectónico donde una aplicación se construye como un conjunto 
-            de servicios pequeños e independientes. A diferencia de las arquitecturas monolíticas, cada servicio ejecuta 
-            un proceso único y se comunica a través de APIs.</p>
+            <p>Enfoque donde una aplicación se construye como un conjunto de servicios pequeños e independientes.</p>
         </section>
 
         <section id="desarrollo-api" class="my-5">
-          <h2>3. Desarrollo de una Web API</h2>
-          <p>Para desarrollar una API efectiva, es fundamental seguir un proceso estructurado y estándares de la industria.</p>
-
-          <h3>Recomendaciones Principales:</h3>
-          <ul>
-            <li><strong>Objetivos y Estándares:</strong> Definir metas claras y usar protocolos como REST con formatos JSON o XML.</li>
-            <li><strong>Documentación y Seguridad:</strong> Usar herramientas como Swagger o Postman, y priorizar la autenticación para proteger los datos.</li>
-            <li><strong>Versionamiento:</strong> Mantener la compatibilidad introduciendo cambios sin afectar a usuarios actuales.</li>
-          </ul>
-
-          <h3>Fases del Proceso:</h3>
-          <ol>
-            <li><strong>Planificación:</strong> Análisis de requerimientos y estimación de tiempos.</li>
-            <li><strong>Diseño:</strong> Definición de <em>endpoints</em> (URLs) y métodos HTTP (GET, POST, etc.).</li>
-            <li><strong>Implementación y Pruebas:</strong> Uso de frameworks como Express.js o Flask, realizando pruebas unitarias de funcionamiento.</li>
-            <li><strong>Despliegue y Monitoreo:</strong> Implementar en producción y vigilar el rendimiento constante.</li>
-          </ol>
+            <h2>3. Desarrollo de una Web API</h2>
+            <p>Para desarrollar una API efectiva, es fundamental seguir un proceso estructurado.</p>
         </section>
-            
+
         <section id="contenedores" class="my-5">
-          <h2>4. Contenedores</h2>
-          <p>Los contenedores son paquetes de software que incluyen todo lo necesario para que una aplicación se ejecute en cualquier entorno.</p>
-          <h3>Conceptos Clave:</h3>
-          <ul>
-            <li><strong>Portabilidad:</strong> Permiten que el código funcione igual en tu computadora que en el servidor de hosting.</li>
-            <li><strong>Eficiencia:</strong> A diferencia de las máquinas virtuales, son más ligeros porque comparten el sistema operativo.</li>
-            <li><strong>Tecnologías populares:</strong> Herramientas como <strong>Docker</strong> y <strong>Kubernetes</strong> son el estándar para gestionar microservicios.</li>
-          </ul>
-          <h3>Relación con Microservicios:</h3>
-          <p>Empresas como <strong>IBM</strong> y <strong>AWS</strong> utilizan contenedores para que cada parte de su API pueda actualizarse y escalarse sin afectar al resto del sistema.</p>
+            <h2>4. Contenedores</h2>
+            <p>Paquetes de software que incluyen todo lo necesario para ejecutarse. Tecnologías como Docker y Kubernetes son el estándar.</p>
         </section>
 
-        <section id="cloud-development" class="my-5">
-          <h2>5. Desarrollo de aplicaciones para la nube</h2>
-          <p>Enfoque para construir y ejecutar aplicaciones que aprovechan totalmente el modelo de computación en la nube.</p>
-
-          <h3>Pilares de la Nube:</h3>
-          <ul>
-            <li><strong>Escalabilidad y Elasticidad:</strong> Ajuste automático de recursos según el tráfico.</li>
-            <li><strong>Resiliencia:</strong> Diseño preparado para fallos, manteniendo la aplicación siempre activa.</li>
-            <li><strong>Modelos:</strong> IaaS (Infraestructura), PaaS (Plataforma) y SaaS (Software).</li>
-          </ul>
-
-          <h3>Tecnologías Vinculadas:</h3>
-          <p>El desarrollo en la nube utiliza <strong>APIs</strong> para la integración, <strong>Microservicios</strong> para la estructura y <strong>Contenedores</strong> para el despliegue rápido y seguro.</p>
-        </section>
-
-        <section id="resumen-nube" class="my-5">
-            <div class="row">
-                <div class="col-md-6 border-end">
-                    <h4>Manejo de Contenedores</h4>
-                    <p>Uso de herramientas como Docker para empaquetar aplicaciones con todas sus dependencias.
-                        Usados regularmente en los microservicios.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <h4>Aplicaciones para la Nube</h4>
-                    <p>Estrategias de despliegue en plataformas como AWS, Azure o Google Cloud para escalabilidad.</p>
-                </div>
-            </div>
+        <section id="cloud" class="my-5">
+            <h2>5. Desarrollo en la nube</h2>
+            <p>Uso de IaaS, PaaS y SaaS para lograr escalabilidad y resiliencia.</p>
         </section>
 
         <section id="mapa-seccion" class="my-5">
-            <div class="container">
-                <h3 class="text-center mb-4">Mapa de Ubicación</h3>
-                <div class="ratio ratio-21x9 shadow-sm rounded">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.639290622367!2d-122.08374688469248!3d37.42199987982521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbba1ee775081%3A0xc457489a80077e7d!2sGoogleplex!5e0!3m2!1ses-419!2smx!4v1647454212345!5m2!1ses-419!2smx" 
-                        style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
-                </div>
-            </div>
-        </section>
-
-        <section class="container my-5">
-            <div class="accordion" id="accordionTemas">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                            Manejo de Contenedores
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionTemas">
-                        <div class="accordion-body">
-                            Uso de herramientas como Docker para empaquetar aplicaciones con todas sus dependencias.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                            Aplicaciones para la Nube
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionTemas">
-                        <div class="accordion-body">
-                            Estrategias de despliegue en plataformas para escalabilidad.
-                        </div>
-                    </div>
-                </div>
+            <h3 class="text-center mb-4">Mapa de Ubicación</h3>
+            <div class="ratio ratio-21x9 shadow-sm">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.639290622367!2d-122.08374688469248!3d37.42199987982521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbba1ee775081%3A0xc457489a80077e7d!2sGoogleplex!5e0!3m2!1ses-419!2smx!4v1647454212345!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
 
         <section class="container my-5">
             <h3 class="text-center mb-4">Material de Apoyo: Microservicios</h3>
-            <div class="ratio ratio-16x9 shadow rounded bg-dark">
+            <div class="ratio ratio-16x9 shadow bg-dark">
                 <video class="w-100" controls>
                     <source src="video.mp4" type="video/mp4">
-                    Tu navegador no soporta video HTML5.
                 </video>
             </div>
         </section>
 
-        <section id="contacto" class="container my-5 p-4 bg-light border rounded shadow-sm">
+        <section id="contacto" class="container my-5 p-4 bg-light border rounded">
             <h3 class="mb-4">Registro de Estudiante</h3>
             <form class="row g-3">
                 <div class="col-md-6">
                     <label class="form-label">Nombre Completo</label>
-                    <input type="text" id="nombre" class="form-control" placeholder="Tu nombre">
+                    <input type="text" id="nombre" class="form-control">
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">Correo Institucional</label>
-                    <input type="email" id="email" class="form-control" placeholder="usuario@correo.com">
+                    <input type="email" id="email" class="form-control">
                 </div>
                 <div class="col-md-4">
                     <label class="form-label">Teléfono</label>
-                    <input type="text" id="tel" class="form-control" placeholder="10 dígitos">
+                    <input type="text" id="tel" class="form-control">
                 </div>
                 <div class="col-md-4">
                     <label class="form-label">Ciudad</label>
-                    <input type="text" id="ciudad" class="form-control" placeholder="Ej. Aguascalientes">
+                    <input type="text" id="ciudad" class="form-control">
                 </div>
                 <div class="col-md-4">
                     <label class="form-label">Tema de Interés</label>
@@ -213,19 +116,17 @@
                     </select>
                 </div>
                 <div class="col-12 mt-4">
-                    <button type="button" onclick="validarFormulario()" class="btn btn-dark w-100 py-2">
-                        Validar Registro de Examen
-                    </button>
+                    <button type="button" onclick="validarFormulario()" class="btn btn-dark w-100 py-2">Validar Registro</button>
                 </div>
             </form>
         </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
