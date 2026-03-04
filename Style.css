@@ -52,15 +52,13 @@ section {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
 }
 
+
 .img-api-rest {
-    max-width: 200px;
-    width: 100%;      
-    height: auto;     
-    display: block;  
-    margin-left: auto;
-    margin-right: auto; 
-    margin-top: 15px;
-    margin-bottom: 25px; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    max-width: 300px !important; 
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
