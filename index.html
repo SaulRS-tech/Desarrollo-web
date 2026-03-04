@@ -43,8 +43,26 @@
     <div class="container mt-5">
         <section id="apis">
             <h2>Tecnologías de Web APIs</h2>
-            <p>Las Web APIs permiten la comunicación entre sistemas</p>
-           <img src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png" 
+            <p>Definición: Mecanismos que permiten a dos componentes de software comunicarse
+                entre sí mediante un conjunto de definiciones y protocolos.</p>
+            <h3> ¿Qué es un API?</h3>
+            <p>Una API es un mensajero o puente tecnológico que permite que dos aplicaciones de software se comuniquen y 
+            compartan datos entre sí. Funciona mediante un ciclo de petición y respuesta, donde un cliente solicita información 
+            y el servidor la entrega a través de un protocolo seguro. Es fundamental en el desarrollo web porque permite integrar 
+            servicios externos</p>
+            <h3> HTTP</h3>
+            <p>HTTP por sus siglas en inglés significa: HyperText Transfer Protocol. Los códigos de estado son respuestas numéricas
+             del servidor que indican si una petición HTTP se completó correctamente o si hubo un error. 
+            Son fundamentales para el diagnóstico en el desarrollo de APIs.</p>
+            <h3>HTTP Extra: Códigos de Estado</h3>
+         <ul>
+              <li><strong>200 OK:</strong> La petición fue exitosa y el servidor entregó los datos.</li>
+              <li><strong>201 Created:</strong> Se ha creado un nuevo recurso con éxito.</li>
+              <li><strong>400 Bad Request:</strong> Error de sintaxis en la petición del cliente.</li>
+              <li><strong>404 Not Found:</strong> El servidor no pudo encontrar el recurso solicitado.</li>
+              <li><strong>500 Internal Server Error:</strong> Error inesperado en el servidor.</li>
+        </ul>
+                <img src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png" 
      alt="Diagrama de API" 
      style="max-width: 200px;" 
      class="img-fluid my-3">
@@ -52,36 +70,60 @@
 
         <section id="microservicios">
             <h2>Microservicios</h2>
-            <p>Arquitectura basada en servicios pequeños e independientes ideal para su uso en 
-               proyectos de gran volumen</p>
+            <p>Los microservicios son un enfoque arquitectónico donde una aplicación se construye como un conjunto 
+            de servicios pequeños e independientes. A diferencia de las arquitecturas monolíticas, cada servicio ejecuta 
+            un proceso único y se comunica a través de APIs.</p>
         </section>
     </div>
-<section id="dev-api" class="my-5">
-    <h3>Desarrollo de una Web API</h3>
-    <p>El desarrollo implica definir endpoints, estructuras de datos (JSON/XML) y la lógica de negocio.</p>
-<button type="button" class="btn btn-info mt-3" data-bs-toggle="modal" data-bs-target="#modalInfo">
-  Saber más sobre APIs
-</button>
+<section id="desarrollo-api" class="my-5">
+  <h2>3. Desarrollo de una Web API</h2>
+  [cite_start]<p>Para desarrollar una API efectiva, es fundamental seguir un proceso estructurado y estándares de la industria.</p>
 
-<div class="modal fade" id="modalInfo" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Detalles Técnicos</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Las APIs son fundamentales para los Microservicios y la computación en la nube, ya que 
-        permiten que el software sea escalable y modular.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
+  <h3>Recomendaciones Principales:</h3>
+  <ul>
+    [cite_start]<li><strong>Objetivos y Estándares:</strong> Definir metas claras y usar protocolos como REST con formatos JSON o XML.</li>
+    [cite_start]<li><strong>Documentación y Seguridad:</strong> Usar herramientas como Swagger o Postman, y priorizar la autenticación para proteger los datos.</li>
+    [cite_start]<li><strong>Versionamiento:</strong> Mantener la compatibilidad introduciendo cambios sin afectar a usuarios actuales.</li>
+  </ul>
+
+  <h3>Fases del Proceso:</h3>
+  <ol>
+    [cite_start]<li><strong>Planificación:</strong> Análisis de requerimientos y estimación de tiempos.</li>
+    [cite_start]<li><strong>Diseño:</strong> Definición de <em>endpoints</em> (URLs) y métodos HTTP (GET, POST, etc.).</li>
+    [cite_start]<li><strong>Implementación y Pruebas:</strong> Uso de frameworks como Express.js o Flask, realizando pruebas unitarias de funcionamiento.</li>
+    [cite_start]<li><strong>Despliegue y Monitoreo:</strong> Implementar en producción y vigilar el rendimiento constante.</li>
+  </ol>
+</section>
+    
+   <section id="contenedores" class="my-5">
+  <h2>4. Contenedores</h2>
+  <p>Los contenedores son paquetes de software que incluyen todo lo necesario para que una aplicación se ejecute en cualquier 
+entorno.</p>
+  <h3>Conceptos Clave:</h3>
+  <ul>
+    <li><strong>Portabilidad:</strong> Permiten que el código funcione igual en tu computadora que en el servidor de hosting.</li>
+    <li><strong>Eficiencia:</strong> A diferencia de las máquinas virtuales, son más ligeros porque comparten el sistema operativo.</li>
+    <li><strong>Tecnologías populares:</strong> Herramientas como <strong>Docker</strong> y <strong>Kubernetes</strong> son el estándar para gestionar microservicios.</li>
+  </ul>
+  <h3>Relación con Microservicios:</h3>
+  <p>Empresas como <strong>IBM</strong> y <strong>AWS</strong> utilizan contenedores para que cada parte de su API pueda actualizarse y escalarse sin afectar al resto del sistema.</p>
 </section>
 
+<section id="cloud-development" class="my-5">
+  <h2>5. Desarrollo de aplicaciones para la nube</h2>
+  <p>Enfoque para construir y ejecutar aplicaciones que aprovechan totalmente el modelo de computación en la nube.</p>
+
+  <h3>Pilares de la Nube:</h3>
+  <ul>
+    <li><strong>Escalabilidad y Elasticidad:</strong> Ajuste automático de recursos según el tráfico.</li>
+    <li><strong>Resiliencia:</strong> Diseño preparado para fallos, manteniendo la aplicación siempre activa.</li>
+    <li><strong>Modelos:</strong> IaaS (Infraestructura), PaaS (Plataforma) y SaaS (Software).</li>
+  </ul>
+
+  <h3>Tecnologías Vinculadas:</h3>
+  <p>El desarrollo en la nube utiliza <strong>APIs</strong> para la integración, <strong>Microservicios</strong> para la estructura y <strong>Contenedores</strong> para el despliegue rápido y seguro.</p>
+</section>
+    
 <div class="row">
     <div class="col-md-6 border-end">
         <h4>Manejo de Contenedores</h4>
@@ -205,5 +247,6 @@
 </body>
 
 </html>
+
 
 
