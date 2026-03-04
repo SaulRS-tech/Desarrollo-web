@@ -13,6 +13,18 @@ section {
 }
 
 .ratio {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #dee2e6;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+#mapa-seccion h3 {
+    color: #212529;
+    font-weight: 700;
+}
+
+.ratio {
     border-radius: 8px;
     overflow: hidden;
 }
